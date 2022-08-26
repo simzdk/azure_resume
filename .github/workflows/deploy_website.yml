@@ -21,8 +21,8 @@ jobs:
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
-        inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name amby-azureresume --name https://amby-azureresume.azureedge.net --resource-group simzdk
+        inlineScript: |           
+           az cdn endpoint purge --content-paths  "/*" --profile-name azureresume --name amby-azureresume --resource-group simzdk
 
   # Azure logout
     - name: logout
